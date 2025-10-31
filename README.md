@@ -3,14 +3,14 @@ My first Python project. Includes a package - 'hangman' - with all methods requi
 Tags: hangman, simple hangman, hangman package, game, game package, play hangman.
 
 
-import random
+    import random
 
-def get_random_word():
+    def get_random_word():
     """Returns a random word from a predefined list."""
     words = ["python", "programming", "hangman", "developer", "computer", "keyboard", "algorithm", "variable", "function"]
     return random.choice(words).upper()
 
-def display_hangman(incorrect_guesses):
+    def display_hangman(incorrect_guesses):
     """Prints the ASCII art for the hangman based on incorrect guesses."""
     stages = [
         """
@@ -79,7 +79,7 @@ def display_hangman(incorrect_guesses):
     ]
     print(stages[incorrect_guesses])
 
-def play_hangman():
+    def play_hangman():
     """Main function to play the Hangman game."""
     word_to_guess = get_random_word()
     guessed_letters = []
@@ -125,6 +125,6 @@ def play_hangman():
         display_hangman(incorrect_guesses)
         print("\nGame Over! You ran out of guesses.")
         print(f"The word was: {word_to_guess}")
-
-if __name__ == "__main__":
+    
+    if __name__ == "__main__":
     play_hangman()
