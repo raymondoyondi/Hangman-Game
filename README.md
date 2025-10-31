@@ -2,7 +2,7 @@ My first Python project. Includes a package - 'hangman' - with all methods requi
 
 Tags: hangman, simple hangman, hangman package, game, game package, play hangman.
 
-Code:
+
 import random
 
 def get_random_word():
